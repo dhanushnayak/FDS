@@ -1,0 +1,807 @@
+2023-05-24 21:43:01,161:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-24 21:43:01,162:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-24 21:43:01,162:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-24 21:43:01,162:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-05-24 21:43:02,592:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-05-24 21:43:03,195:INFO:PyCaret AnomalyExperiment
+2023-05-24 21:43:03,196:INFO:Logging name: anomaly-default-name
+2023-05-24 21:43:03,196:INFO:ML Usecase: MLUsecase.ANOMALY
+2023-05-24 21:43:03,196:INFO:version 3.0.2
+2023-05-24 21:43:03,196:INFO:Initializing setup()
+2023-05-24 21:43:03,196:INFO:self.USI: 2a9d
+2023-05-24 21:43:03,197:INFO:self._variable_keys: {'log_plots_param', 'USI', 'exp_name_log', 'data', 'n_jobs_param', 'html_param', 'gpu_param', 'X', 'pipeline', 'gpu_n_jobs_param', '_available_plots', 'memory', 'seed', 'idx', 'exp_id', 'logging_param', '_ml_usecase'}
+2023-05-24 21:43:03,197:INFO:Checking environment
+2023-05-24 21:43:03,197:INFO:python_version: 3.8.8
+2023-05-24 21:43:03,197:INFO:python_build: ('default', 'Apr 13 2021 15:08:03')
+2023-05-24 21:43:03,198:INFO:machine: AMD64
+2023-05-24 21:43:03,198:INFO:platform: Windows-10-10.0.19041-SP0
+2023-05-24 21:43:03,204:INFO:Memory: svmem(total=17054711808, available=5958451200, percent=65.1, used=11096260608, free=5958451200)
+2023-05-24 21:43:03,204:INFO:Physical Core: 2
+2023-05-24 21:43:03,204:INFO:Logical Core: 4
+2023-05-24 21:43:03,204:INFO:Checking libraries
+2023-05-24 21:43:03,205:INFO:System:
+2023-05-24 21:43:03,205:INFO:    python: 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]
+2023-05-24 21:43:03,205:INFO:executable: c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\Scripts\python.exe
+2023-05-24 21:43:03,205:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-05-24 21:43:03,205:INFO:PyCaret required dependencies:
+2023-05-24 21:43:03,206:INFO:                 pip: 23.1.2
+2023-05-24 21:43:03,206:INFO:          setuptools: 67.7.2
+2023-05-24 21:43:03,206:INFO:             pycaret: 3.0.2
+2023-05-24 21:43:03,206:INFO:             IPython: 8.12.2
+2023-05-24 21:43:03,206:INFO:          ipywidgets: 8.0.6
+2023-05-24 21:43:03,207:INFO:                tqdm: 4.65.0
+2023-05-24 21:43:03,207:INFO:               numpy: 1.23.5
+2023-05-24 21:43:03,207:INFO:              pandas: 1.5.3
+2023-05-24 21:43:03,207:INFO:              jinja2: 3.1.2
+2023-05-24 21:43:03,207:INFO:               scipy: 1.10.1
+2023-05-24 21:43:03,207:INFO:              joblib: 1.2.0
+2023-05-24 21:43:03,208:INFO:             sklearn: 1.2.2
+2023-05-24 21:43:03,208:INFO:                pyod: 1.0.9
+2023-05-24 21:43:03,208:INFO:            imblearn: 0.10.1
+2023-05-24 21:43:03,208:INFO:   category_encoders: 2.6.1
+2023-05-24 21:43:03,208:INFO:            lightgbm: 3.3.5
+2023-05-24 21:43:03,209:INFO:               numba: 0.57.0
+2023-05-24 21:43:03,209:INFO:            requests: 2.31.0
+2023-05-24 21:43:03,209:INFO:          matplotlib: 3.7.1
+2023-05-24 21:43:03,209:INFO:          scikitplot: 0.3.7
+2023-05-24 21:43:03,209:INFO:         yellowbrick: 1.5
+2023-05-24 21:43:03,210:INFO:              plotly: 5.14.1
+2023-05-24 21:43:03,210:INFO:             kaleido: 0.2.1
+2023-05-24 21:43:03,210:INFO:         statsmodels: 0.14.0
+2023-05-24 21:43:03,210:INFO:              sktime: 0.17.0
+2023-05-24 21:43:03,210:INFO:               tbats: 1.1.3
+2023-05-24 21:43:03,211:INFO:            pmdarima: 2.0.3
+2023-05-24 21:43:03,211:INFO:              psutil: 5.9.5
+2023-05-24 21:43:03,211:INFO:PyCaret optional dependencies:
+2023-05-24 21:43:03,264:INFO:                shap: Not installed
+2023-05-24 21:43:03,264:INFO:           interpret: 0.4.1
+2023-05-24 21:43:03,264:INFO:                umap: Not installed
+2023-05-24 21:43:03,266:INFO:    pandas_profiling: Not installed
+2023-05-24 21:43:03,266:INFO:  explainerdashboard: Not installed
+2023-05-24 21:43:03,266:INFO:             autoviz: Not installed
+2023-05-24 21:43:03,266:INFO:           fairlearn: Not installed
+2023-05-24 21:43:03,270:INFO:             xgboost: Installed but version unavailable
+2023-05-24 21:43:03,271:INFO:            catboost: Not installed
+2023-05-24 21:43:03,271:INFO:              kmodes: Not installed
+2023-05-24 21:43:03,272:INFO:             mlxtend: Not installed
+2023-05-24 21:43:03,272:INFO:       statsforecast: Not installed
+2023-05-24 21:43:03,273:INFO:        tune_sklearn: Not installed
+2023-05-24 21:43:03,273:INFO:                 ray: Not installed
+2023-05-24 21:43:03,274:INFO:            hyperopt: Not installed
+2023-05-24 21:43:03,275:INFO:              optuna: Not installed
+2023-05-24 21:43:03,275:INFO:               skopt: Not installed
+2023-05-24 21:43:03,276:INFO:              mlflow: Not installed
+2023-05-24 21:43:03,276:INFO:              gradio: Not installed
+2023-05-24 21:43:03,277:INFO:             fastapi: Not installed
+2023-05-24 21:43:03,277:INFO:             uvicorn: Not installed
+2023-05-24 21:43:03,277:INFO:              m2cgen: Not installed
+2023-05-24 21:43:03,278:INFO:           evidently: Not installed
+2023-05-24 21:43:03,278:INFO:               fugue: Not installed
+2023-05-24 21:43:03,278:INFO:           streamlit: Not installed
+2023-05-24 21:43:03,278:INFO:             prophet: Not installed
+2023-05-24 21:43:03,278:INFO:None
+2023-05-24 21:43:03,279:INFO:Set up data.
+2023-05-24 21:43:03,360:INFO:Set up index.
+2023-05-24 21:43:03,360:INFO:Assigning column types.
+2023-05-24 21:43:03,371:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-05-24 21:43:04,015:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-05-24 21:43:04,024:INFO:Preparing preprocessing pipeline...
+2023-05-24 21:43:04,024:INFO:Set up simple imputation.
+2023-05-24 21:43:04,028:INFO:Set up encoding of ordinal features.
+2023-05-24 21:43:04,038:INFO:Set up encoding of categorical features.
+2023-05-24 21:43:04,038:INFO:Set up feature normalization.
+2023-05-24 21:43:04,396:INFO:Finished creating preprocessing pipeline.
+2023-05-24 21:43:04,603:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Memantine    0
+Saline       1
+NaN         -1
+dtype: int64},
+                                                                        {'col': 'Behavior',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': C/S    0
+S/C    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-05-24 21:43:04,603:INFO:Creating final display dataframe.
+2023-05-24 21:43:05,058:INFO:Setup _display_container:                  Description                 Value
+0                 Session id                   123
+1        Original data shape            (1026, 82)
+2     Transformed data shape            (1026, 88)
+3            Ignore features                     1
+4           Ordinal features                     3
+5           Numeric features                    77
+6       Categorical features                     4
+7   Rows with missing values                 48.5%
+8                 Preprocess                  True
+9            Imputation type                simple
+10        Numeric imputation                  mean
+11    Categorical imputation                  mode
+12  Maximum one-hot encoding                    -1
+13           Encoding method                  None
+14                 Normalize                  True
+15          Normalize method                zscore
+16                  CPU Jobs                    -1
+17                   Use GPU                 False
+18            Log Experiment                 False
+19           Experiment Name  anomaly-default-name
+20                       USI                  2a9d
+2023-05-24 21:43:05,076:INFO:setup() successfully completed in 1.88s...............
+2023-05-24 21:52:21,486:INFO:Initializing create_model()
+2023-05-24 21:52:21,487:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-05-24 21:52:21,487:INFO:Checking exceptions
+2023-05-24 21:52:21,650:INFO:Importing untrained model
+2023-05-24 21:52:21,667:INFO:Isolation Forest Imported successfully
+2023-05-24 21:52:21,704:INFO:Fitting Model
+2023-05-24 21:52:23,337:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2023-05-24 21:52:23,339:INFO:create_models() successfully completed......................................
+2023-05-24 21:52:23,357:INFO:Uploading results into container
+2023-05-24 21:52:23,357:INFO:Uploading model into container now
+2023-05-24 21:52:23,372:INFO:_master_model_container: 1
+2023-05-24 21:52:23,373:INFO:_display_container: 1
+2023-05-24 21:52:23,374:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2023-05-24 21:52:23,374:INFO:create_model() successfully completed......................................
+2023-05-24 21:52:42,017:INFO:gpu_param set to False
+2023-05-24 21:53:20,836:INFO:Initializing assign_model()
+2023-05-24 21:53:20,837:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2023-05-24 21:53:20,837:INFO:Checking exceptions
+2023-05-24 21:53:20,837:INFO:Determining Trained Model
+2023-05-24 21:53:20,838:INFO:Trained Model : Isolation Forest
+2023-05-24 21:53:20,838:INFO:Copying data
+2023-05-24 21:53:20,842:INFO:(1026, 83)
+2023-05-24 21:53:20,842:INFO:assign_model() successfully completed......................................
+2023-05-24 21:53:53,637:INFO:Initializing plot_model()
+2023-05-24 21:53:53,637:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, system=True)
+2023-05-24 21:53:53,637:INFO:Checking exceptions
+2023-05-24 21:53:53,647:INFO:Preloading libraries
+2023-05-24 21:53:53,677:INFO:Copying training dataset
+2023-05-24 21:53:53,677:INFO:Plot type: tsne
+2023-05-24 21:53:53,677:INFO:SubProcess assign_model() called ==================================
+2023-05-24 21:53:53,678:INFO:Initializing assign_model()
+2023-05-24 21:53:53,678:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=True, score=False, verbose=False)
+2023-05-24 21:53:53,678:INFO:Checking exceptions
+2023-05-24 21:53:53,679:INFO:Determining Trained Model
+2023-05-24 21:53:53,680:INFO:Trained Model : Isolation Forest
+2023-05-24 21:53:53,680:INFO:Copying data
+2023-05-24 21:53:53,763:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-05-24 21:53:53,767:INFO:(1026, 89)
+2023-05-24 21:53:53,767:INFO:assign_model() successfully completed......................................
+2023-05-24 21:53:53,768:INFO:SubProcess assign_model() end ==================================
+2023-05-24 21:53:53,771:INFO:Getting dummies to cast categorical variables
+2023-05-24 21:53:53,771:INFO:Fitting TSNE()
+2023-05-24 21:54:22,943:INFO:Rendering Visual
+2023-05-24 21:54:24,331:INFO:Visual Rendered Successfully
+2023-05-24 21:54:24,507:INFO:plot_model() successfully completed......................................
+2023-05-24 21:55:01,087:INFO:Initializing predict_model()
+2023-05-24 21:55:01,087:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 21:55:01,551:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 21:55:18,848:INFO:Initializing predict_model()
+2023-05-24 21:55:18,849:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 21:55:19,459:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 21:56:01,513:INFO:Initializing predict_model()
+2023-05-24 21:56:01,514:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001920CF4C730>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 21:56:01,563:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 21:56:42,997:INFO:PyCaret AnomalyExperiment
+2023-05-24 21:56:42,998:INFO:Logging name: anomaly-default-name
+2023-05-24 21:56:42,999:INFO:ML Usecase: MLUsecase.ANOMALY
+2023-05-24 21:56:42,999:INFO:version 3.0.2
+2023-05-24 21:56:42,999:INFO:Initializing setup()
+2023-05-24 21:56:42,999:INFO:self.USI: 0d6c
+2023-05-24 21:56:43,000:INFO:self._variable_keys: {'log_plots_param', 'USI', 'exp_name_log', 'data', 'n_jobs_param', 'html_param', 'gpu_param', 'X', 'pipeline', 'gpu_n_jobs_param', '_available_plots', 'memory', 'seed', 'idx', 'exp_id', 'logging_param', '_ml_usecase'}
+2023-05-24 21:56:43,000:INFO:Checking environment
+2023-05-24 21:56:43,000:INFO:python_version: 3.8.8
+2023-05-24 21:56:43,001:INFO:python_build: ('default', 'Apr 13 2021 15:08:03')
+2023-05-24 21:56:43,001:INFO:machine: AMD64
+2023-05-24 21:56:43,001:INFO:platform: Windows-10-10.0.19041-SP0
+2023-05-24 21:56:43,005:INFO:Memory: svmem(total=17054711808, available=6214176768, percent=63.6, used=10840535040, free=6214176768)
+2023-05-24 21:56:43,005:INFO:Physical Core: 2
+2023-05-24 21:56:43,005:INFO:Logical Core: 4
+2023-05-24 21:56:43,005:INFO:Checking libraries
+2023-05-24 21:56:43,006:INFO:System:
+2023-05-24 21:56:43,006:INFO:    python: 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]
+2023-05-24 21:56:43,006:INFO:executable: c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\Scripts\python.exe
+2023-05-24 21:56:43,007:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-05-24 21:56:43,007:INFO:PyCaret required dependencies:
+2023-05-24 21:56:43,007:INFO:                 pip: 23.1.2
+2023-05-24 21:56:43,007:INFO:          setuptools: 67.7.2
+2023-05-24 21:56:43,007:INFO:             pycaret: 3.0.2
+2023-05-24 21:56:43,008:INFO:             IPython: 8.12.2
+2023-05-24 21:56:43,008:INFO:          ipywidgets: 8.0.6
+2023-05-24 21:56:43,008:INFO:                tqdm: 4.65.0
+2023-05-24 21:56:43,008:INFO:               numpy: 1.23.5
+2023-05-24 21:56:43,008:INFO:              pandas: 1.5.3
+2023-05-24 21:56:43,008:INFO:              jinja2: 3.1.2
+2023-05-24 21:56:43,008:INFO:               scipy: 1.10.1
+2023-05-24 21:56:43,008:INFO:              joblib: 1.2.0
+2023-05-24 21:56:43,009:INFO:             sklearn: 1.2.2
+2023-05-24 21:56:43,009:INFO:                pyod: 1.0.9
+2023-05-24 21:56:43,009:INFO:            imblearn: 0.10.1
+2023-05-24 21:56:43,009:INFO:   category_encoders: 2.6.1
+2023-05-24 21:56:43,009:INFO:            lightgbm: 3.3.5
+2023-05-24 21:56:43,009:INFO:               numba: 0.57.0
+2023-05-24 21:56:43,009:INFO:            requests: 2.31.0
+2023-05-24 21:56:43,010:INFO:          matplotlib: 3.7.1
+2023-05-24 21:56:43,010:INFO:          scikitplot: 0.3.7
+2023-05-24 21:56:43,010:INFO:         yellowbrick: 1.5
+2023-05-24 21:56:43,010:INFO:              plotly: 5.14.1
+2023-05-24 21:56:43,010:INFO:             kaleido: 0.2.1
+2023-05-24 21:56:43,010:INFO:         statsmodels: 0.14.0
+2023-05-24 21:56:43,010:INFO:              sktime: 0.17.0
+2023-05-24 21:56:43,010:INFO:               tbats: 1.1.3
+2023-05-24 21:56:43,010:INFO:            pmdarima: 2.0.3
+2023-05-24 21:56:43,010:INFO:              psutil: 5.9.5
+2023-05-24 21:56:43,011:INFO:PyCaret optional dependencies:
+2023-05-24 21:56:43,011:INFO:                shap: Not installed
+2023-05-24 21:56:43,011:INFO:           interpret: 0.4.1
+2023-05-24 21:56:43,011:INFO:                umap: Not installed
+2023-05-24 21:56:43,011:INFO:    pandas_profiling: Not installed
+2023-05-24 21:56:43,011:INFO:  explainerdashboard: Not installed
+2023-05-24 21:56:43,011:INFO:             autoviz: Not installed
+2023-05-24 21:56:43,011:INFO:           fairlearn: Not installed
+2023-05-24 21:56:43,012:INFO:             xgboost: Installed but version unavailable
+2023-05-24 21:56:43,012:INFO:            catboost: Not installed
+2023-05-24 21:56:43,012:INFO:              kmodes: Not installed
+2023-05-24 21:56:43,012:INFO:             mlxtend: Not installed
+2023-05-24 21:56:43,012:INFO:       statsforecast: Not installed
+2023-05-24 21:56:43,012:INFO:        tune_sklearn: Not installed
+2023-05-24 21:56:43,012:INFO:                 ray: Not installed
+2023-05-24 21:56:43,012:INFO:            hyperopt: Not installed
+2023-05-24 21:56:43,012:INFO:              optuna: Not installed
+2023-05-24 21:56:43,013:INFO:               skopt: Not installed
+2023-05-24 21:56:43,013:INFO:              mlflow: Not installed
+2023-05-24 21:56:43,013:INFO:              gradio: Not installed
+2023-05-24 21:56:43,013:INFO:             fastapi: Not installed
+2023-05-24 21:56:43,013:INFO:             uvicorn: Not installed
+2023-05-24 21:56:43,013:INFO:              m2cgen: Not installed
+2023-05-24 21:56:43,013:INFO:           evidently: Not installed
+2023-05-24 21:56:43,013:INFO:               fugue: Not installed
+2023-05-24 21:56:43,014:INFO:           streamlit: Not installed
+2023-05-24 21:56:43,014:INFO:             prophet: Not installed
+2023-05-24 21:56:43,014:INFO:None
+2023-05-24 21:56:43,014:INFO:Set up data.
+2023-05-24 21:56:43,093:INFO:Set up index.
+2023-05-24 21:56:43,094:INFO:Assigning column types.
+2023-05-24 21:56:43,103:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-05-24 21:56:43,104:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-05-24 21:56:43,106:INFO:Preparing preprocessing pipeline...
+2023-05-24 21:56:43,106:INFO:Set up simple imputation.
+2023-05-24 21:56:43,110:INFO:Set up encoding of ordinal features.
+2023-05-24 21:56:43,117:INFO:Set up encoding of categorical features.
+2023-05-24 21:56:43,117:INFO:Set up feature normalization.
+2023-05-24 21:56:43,318:INFO:Finished creating preprocessing pipeline.
+2023-05-24 21:56:43,400:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Memantine    0
+Saline       1
+NaN         -1
+dtype: int64},
+                                                                        {'col': 'Behavior',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': C/S    0
+S/C    1
+NaN   -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-05-24 21:56:43,400:INFO:Creating final display dataframe.
+2023-05-24 21:56:43,441:INFO:Setup _display_container:                  Description                 Value
+0                 Session id                   123
+1        Original data shape            (1026, 82)
+2     Transformed data shape            (1026, 88)
+3            Ignore features                     1
+4           Ordinal features                     3
+5           Numeric features                    77
+6       Categorical features                     4
+7   Rows with missing values                 48.5%
+8                 Preprocess                  True
+9            Imputation type                simple
+10        Numeric imputation                  mean
+11    Categorical imputation                  mode
+12  Maximum one-hot encoding                    -1
+13           Encoding method                  None
+14                 Normalize                  True
+15          Normalize method                zscore
+16                  CPU Jobs                    -1
+17                   Use GPU                 False
+18            Log Experiment                 False
+19           Experiment Name  anomaly-default-name
+20                       USI                  0d6c
+2023-05-24 21:56:43,456:INFO:setup() successfully completed in 0.46s...............
+2023-05-24 22:01:04,936:INFO:PyCaret AnomalyExperiment
+2023-05-24 22:01:04,936:INFO:Logging name: anomaly-default-name
+2023-05-24 22:01:04,936:INFO:ML Usecase: MLUsecase.ANOMALY
+2023-05-24 22:01:04,937:INFO:version 3.0.2
+2023-05-24 22:01:04,937:INFO:Initializing setup()
+2023-05-24 22:01:04,937:INFO:self.USI: cd8c
+2023-05-24 22:01:04,937:INFO:self._variable_keys: {'log_plots_param', 'USI', 'exp_name_log', 'data', 'n_jobs_param', 'html_param', 'gpu_param', 'X', 'pipeline', 'gpu_n_jobs_param', '_available_plots', 'memory', 'seed', 'idx', 'exp_id', 'logging_param', '_ml_usecase'}
+2023-05-24 22:01:04,937:INFO:Checking environment
+2023-05-24 22:01:04,937:INFO:python_version: 3.8.8
+2023-05-24 22:01:04,937:INFO:python_build: ('default', 'Apr 13 2021 15:08:03')
+2023-05-24 22:01:04,937:INFO:machine: AMD64
+2023-05-24 22:01:04,937:INFO:platform: Windows-10-10.0.19041-SP0
+2023-05-24 22:01:04,941:INFO:Memory: svmem(total=17054711808, available=6281494528, percent=63.2, used=10773217280, free=6281494528)
+2023-05-24 22:01:04,941:INFO:Physical Core: 2
+2023-05-24 22:01:04,941:INFO:Logical Core: 4
+2023-05-24 22:01:04,941:INFO:Checking libraries
+2023-05-24 22:01:04,941:INFO:System:
+2023-05-24 22:01:04,941:INFO:    python: 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]
+2023-05-24 22:01:04,941:INFO:executable: c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\Scripts\python.exe
+2023-05-24 22:01:04,943:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-05-24 22:01:04,943:INFO:PyCaret required dependencies:
+2023-05-24 22:01:04,944:INFO:                 pip: 23.1.2
+2023-05-24 22:01:04,944:INFO:          setuptools: 67.7.2
+2023-05-24 22:01:04,944:INFO:             pycaret: 3.0.2
+2023-05-24 22:01:04,944:INFO:             IPython: 8.12.2
+2023-05-24 22:01:04,944:INFO:          ipywidgets: 8.0.6
+2023-05-24 22:01:04,945:INFO:                tqdm: 4.65.0
+2023-05-24 22:01:04,945:INFO:               numpy: 1.23.5
+2023-05-24 22:01:04,945:INFO:              pandas: 1.5.3
+2023-05-24 22:01:04,945:INFO:              jinja2: 3.1.2
+2023-05-24 22:01:04,945:INFO:               scipy: 1.10.1
+2023-05-24 22:01:04,945:INFO:              joblib: 1.2.0
+2023-05-24 22:01:04,945:INFO:             sklearn: 1.2.2
+2023-05-24 22:01:04,946:INFO:                pyod: 1.0.9
+2023-05-24 22:01:04,946:INFO:            imblearn: 0.10.1
+2023-05-24 22:01:04,946:INFO:   category_encoders: 2.6.1
+2023-05-24 22:01:04,946:INFO:            lightgbm: 3.3.5
+2023-05-24 22:01:04,946:INFO:               numba: 0.57.0
+2023-05-24 22:01:04,946:INFO:            requests: 2.31.0
+2023-05-24 22:01:04,946:INFO:          matplotlib: 3.7.1
+2023-05-24 22:01:04,947:INFO:          scikitplot: 0.3.7
+2023-05-24 22:01:04,947:INFO:         yellowbrick: 1.5
+2023-05-24 22:01:04,947:INFO:              plotly: 5.14.1
+2023-05-24 22:01:04,947:INFO:             kaleido: 0.2.1
+2023-05-24 22:01:04,947:INFO:         statsmodels: 0.14.0
+2023-05-24 22:01:04,947:INFO:              sktime: 0.17.0
+2023-05-24 22:01:04,948:INFO:               tbats: 1.1.3
+2023-05-24 22:01:04,948:INFO:            pmdarima: 2.0.3
+2023-05-24 22:01:04,948:INFO:              psutil: 5.9.5
+2023-05-24 22:01:04,948:INFO:PyCaret optional dependencies:
+2023-05-24 22:01:04,948:INFO:                shap: Not installed
+2023-05-24 22:01:04,948:INFO:           interpret: 0.4.1
+2023-05-24 22:01:04,948:INFO:                umap: Not installed
+2023-05-24 22:01:04,949:INFO:    pandas_profiling: Not installed
+2023-05-24 22:01:04,949:INFO:  explainerdashboard: Not installed
+2023-05-24 22:01:04,949:INFO:             autoviz: Not installed
+2023-05-24 22:01:04,949:INFO:           fairlearn: Not installed
+2023-05-24 22:01:04,949:INFO:             xgboost: Installed but version unavailable
+2023-05-24 22:01:04,949:INFO:            catboost: Not installed
+2023-05-24 22:01:04,949:INFO:              kmodes: Not installed
+2023-05-24 22:01:04,949:INFO:             mlxtend: Not installed
+2023-05-24 22:01:04,949:INFO:       statsforecast: Not installed
+2023-05-24 22:01:04,949:INFO:        tune_sklearn: Not installed
+2023-05-24 22:01:04,949:INFO:                 ray: Not installed
+2023-05-24 22:01:04,949:INFO:            hyperopt: Not installed
+2023-05-24 22:01:04,950:INFO:              optuna: Not installed
+2023-05-24 22:01:04,950:INFO:               skopt: Not installed
+2023-05-24 22:01:04,950:INFO:              mlflow: Not installed
+2023-05-24 22:01:04,950:INFO:              gradio: Not installed
+2023-05-24 22:01:04,950:INFO:             fastapi: Not installed
+2023-05-24 22:01:04,950:INFO:             uvicorn: Not installed
+2023-05-24 22:01:04,950:INFO:              m2cgen: Not installed
+2023-05-24 22:01:04,950:INFO:           evidently: Not installed
+2023-05-24 22:01:04,950:INFO:               fugue: Not installed
+2023-05-24 22:01:04,950:INFO:           streamlit: Not installed
+2023-05-24 22:01:04,950:INFO:             prophet: Not installed
+2023-05-24 22:01:04,950:INFO:None
+2023-05-24 22:01:04,950:INFO:Set up data.
+2023-05-24 22:01:05,012:INFO:Set up index.
+2023-05-24 22:01:05,012:INFO:Assigning column types.
+2023-05-24 22:01:05,017:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-05-24 22:01:05,018:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-05-24 22:01:05,019:INFO:Preparing preprocessing pipeline...
+2023-05-24 22:01:05,019:INFO:Set up simple imputation.
+2023-05-24 22:01:05,021:INFO:Set up encoding of categorical features.
+2023-05-24 22:01:05,021:INFO:Set up feature normalization.
+2023-05-24 22:01:05,118:INFO:Finished creating preprocessing pipeline.
+2023-05-24 22:01:05,131:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['class'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-05-24 22:01:05,131:INFO:Creating final display dataframe.
+2023-05-24 22:01:05,211:INFO:Setup _display_container:                  Description                 Value
+0                 Session id                   123
+1        Original data shape            (1026, 78)
+2     Transformed data shape            (1026, 85)
+3           Numeric features                    77
+4       Categorical features                     1
+5   Rows with missing values                 48.5%
+6                 Preprocess                  True
+7            Imputation type                simple
+8         Numeric imputation                  mean
+9     Categorical imputation                  mode
+10  Maximum one-hot encoding                    -1
+11           Encoding method                  None
+12                 Normalize                  True
+13          Normalize method                zscore
+14                  CPU Jobs                    -1
+15                   Use GPU                 False
+16            Log Experiment                 False
+17           Experiment Name  anomaly-default-name
+18                       USI                  cd8c
+2023-05-24 22:01:05,220:INFO:setup() successfully completed in 0.3s...............
+2023-05-24 22:01:08,007:INFO:Initializing create_model()
+2023-05-24 22:01:08,008:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921178D190>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-05-24 22:01:08,008:INFO:Checking exceptions
+2023-05-24 22:01:08,375:INFO:Importing untrained model
+2023-05-24 22:01:08,385:INFO:Isolation Forest Imported successfully
+2023-05-24 22:01:08,398:INFO:Fitting Model
+2023-05-24 22:01:09,542:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2023-05-24 22:01:09,542:INFO:create_models() successfully completed......................................
+2023-05-24 22:01:09,550:INFO:Uploading results into container
+2023-05-24 22:01:09,550:INFO:Uploading model into container now
+2023-05-24 22:01:09,556:INFO:_master_model_container: 1
+2023-05-24 22:01:09,556:INFO:_display_container: 1
+2023-05-24 22:01:09,557:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2023-05-24 22:01:09,557:INFO:create_model() successfully completed......................................
+2023-05-24 22:01:15,717:INFO:Initializing assign_model()
+2023-05-24 22:01:15,718:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921178D190>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2023-05-24 22:01:15,718:INFO:Checking exceptions
+2023-05-24 22:01:15,719:INFO:Determining Trained Model
+2023-05-24 22:01:15,719:INFO:Trained Model : Isolation Forest
+2023-05-24 22:01:15,720:INFO:Copying data
+2023-05-24 22:01:15,724:INFO:(1026, 80)
+2023-05-24 22:01:15,724:INFO:assign_model() successfully completed......................................
+2023-05-24 22:01:25,138:INFO:Initializing predict_model()
+2023-05-24 22:01:25,138:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921178D190>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 22:01:25,330:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:01:31,419:INFO:Initializing predict_model()
+2023-05-24 22:01:31,419:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921178D190>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 22:01:31,530:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:01:31,661:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:03:00,004:INFO:PyCaret AnomalyExperiment
+2023-05-24 22:03:00,005:INFO:Logging name: anomaly-default-name
+2023-05-24 22:03:00,005:INFO:ML Usecase: MLUsecase.ANOMALY
+2023-05-24 22:03:00,005:INFO:version 3.0.2
+2023-05-24 22:03:00,005:INFO:Initializing setup()
+2023-05-24 22:03:00,005:INFO:self.USI: 0c02
+2023-05-24 22:03:00,005:INFO:self._variable_keys: {'log_plots_param', 'USI', 'exp_name_log', 'data', 'n_jobs_param', 'html_param', 'gpu_param', 'X', 'pipeline', 'gpu_n_jobs_param', '_available_plots', 'memory', 'seed', 'idx', 'exp_id', 'logging_param', '_ml_usecase'}
+2023-05-24 22:03:00,005:INFO:Checking environment
+2023-05-24 22:03:00,006:INFO:python_version: 3.8.8
+2023-05-24 22:03:00,006:INFO:python_build: ('default', 'Apr 13 2021 15:08:03')
+2023-05-24 22:03:00,006:INFO:machine: AMD64
+2023-05-24 22:03:00,006:INFO:platform: Windows-10-10.0.19041-SP0
+2023-05-24 22:03:00,009:INFO:Memory: svmem(total=17054711808, available=6451294208, percent=62.2, used=10603417600, free=6451294208)
+2023-05-24 22:03:00,010:INFO:Physical Core: 2
+2023-05-24 22:03:00,010:INFO:Logical Core: 4
+2023-05-24 22:03:00,010:INFO:Checking libraries
+2023-05-24 22:03:00,010:INFO:System:
+2023-05-24 22:03:00,010:INFO:    python: 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]
+2023-05-24 22:03:00,010:INFO:executable: c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\Scripts\python.exe
+2023-05-24 22:03:00,010:INFO:   machine: Windows-10-10.0.19041-SP0
+2023-05-24 22:03:00,010:INFO:PyCaret required dependencies:
+2023-05-24 22:03:00,011:INFO:                 pip: 23.1.2
+2023-05-24 22:03:00,011:INFO:          setuptools: 67.7.2
+2023-05-24 22:03:00,011:INFO:             pycaret: 3.0.2
+2023-05-24 22:03:00,011:INFO:             IPython: 8.12.2
+2023-05-24 22:03:00,011:INFO:          ipywidgets: 8.0.6
+2023-05-24 22:03:00,011:INFO:                tqdm: 4.65.0
+2023-05-24 22:03:00,011:INFO:               numpy: 1.23.5
+2023-05-24 22:03:00,011:INFO:              pandas: 1.5.3
+2023-05-24 22:03:00,011:INFO:              jinja2: 3.1.2
+2023-05-24 22:03:00,011:INFO:               scipy: 1.10.1
+2023-05-24 22:03:00,012:INFO:              joblib: 1.2.0
+2023-05-24 22:03:00,012:INFO:             sklearn: 1.2.2
+2023-05-24 22:03:00,012:INFO:                pyod: 1.0.9
+2023-05-24 22:03:00,012:INFO:            imblearn: 0.10.1
+2023-05-24 22:03:00,012:INFO:   category_encoders: 2.6.1
+2023-05-24 22:03:00,013:INFO:            lightgbm: 3.3.5
+2023-05-24 22:03:00,013:INFO:               numba: 0.57.0
+2023-05-24 22:03:00,013:INFO:            requests: 2.31.0
+2023-05-24 22:03:00,013:INFO:          matplotlib: 3.7.1
+2023-05-24 22:03:00,013:INFO:          scikitplot: 0.3.7
+2023-05-24 22:03:00,014:INFO:         yellowbrick: 1.5
+2023-05-24 22:03:00,015:INFO:              plotly: 5.14.1
+2023-05-24 22:03:00,015:INFO:             kaleido: 0.2.1
+2023-05-24 22:03:00,015:INFO:         statsmodels: 0.14.0
+2023-05-24 22:03:00,015:INFO:              sktime: 0.17.0
+2023-05-24 22:03:00,015:INFO:               tbats: 1.1.3
+2023-05-24 22:03:00,016:INFO:            pmdarima: 2.0.3
+2023-05-24 22:03:00,016:INFO:              psutil: 5.9.5
+2023-05-24 22:03:00,016:INFO:PyCaret optional dependencies:
+2023-05-24 22:03:00,016:INFO:                shap: Not installed
+2023-05-24 22:03:00,016:INFO:           interpret: 0.4.1
+2023-05-24 22:03:00,016:INFO:                umap: Not installed
+2023-05-24 22:03:00,016:INFO:    pandas_profiling: Not installed
+2023-05-24 22:03:00,017:INFO:  explainerdashboard: Not installed
+2023-05-24 22:03:00,017:INFO:             autoviz: Not installed
+2023-05-24 22:03:00,017:INFO:           fairlearn: Not installed
+2023-05-24 22:03:00,017:INFO:             xgboost: Installed but version unavailable
+2023-05-24 22:03:00,017:INFO:            catboost: Not installed
+2023-05-24 22:03:00,017:INFO:              kmodes: Not installed
+2023-05-24 22:03:00,018:INFO:             mlxtend: Not installed
+2023-05-24 22:03:00,018:INFO:       statsforecast: Not installed
+2023-05-24 22:03:00,018:INFO:        tune_sklearn: Not installed
+2023-05-24 22:03:00,018:INFO:                 ray: Not installed
+2023-05-24 22:03:00,018:INFO:            hyperopt: Not installed
+2023-05-24 22:03:00,018:INFO:              optuna: Not installed
+2023-05-24 22:03:00,018:INFO:               skopt: Not installed
+2023-05-24 22:03:00,018:INFO:              mlflow: Not installed
+2023-05-24 22:03:00,019:INFO:              gradio: Not installed
+2023-05-24 22:03:00,019:INFO:             fastapi: Not installed
+2023-05-24 22:03:00,019:INFO:             uvicorn: Not installed
+2023-05-24 22:03:00,019:INFO:              m2cgen: Not installed
+2023-05-24 22:03:00,019:INFO:           evidently: Not installed
+2023-05-24 22:03:00,019:INFO:               fugue: Not installed
+2023-05-24 22:03:00,019:INFO:           streamlit: Not installed
+2023-05-24 22:03:00,019:INFO:             prophet: Not installed
+2023-05-24 22:03:00,020:INFO:None
+2023-05-24 22:03:00,020:INFO:Set up data.
+2023-05-24 22:03:00,112:INFO:Set up index.
+2023-05-24 22:03:00,116:INFO:Assigning column types.
+2023-05-24 22:03:00,123:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2023-05-24 22:03:00,124:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2023-05-24 22:03:00,157:INFO:Preparing preprocessing pipeline...
+2023-05-24 22:03:00,157:INFO:Set up simple imputation.
+2023-05-24 22:03:00,160:INFO:Set up encoding of categorical features.
+2023-05-24 22:03:00,161:INFO:Set up feature normalization.
+2023-05-24 22:03:00,342:INFO:Finished creating preprocessing pipeline.
+2023-05-24 22:03:00,357:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['class'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2023-05-24 22:03:00,357:INFO:Creating final display dataframe.
+2023-05-24 22:03:00,387:INFO:Setup _display_container:                  Description                 Value
+0                 Session id                   123
+1        Original data shape            (1026, 78)
+2     Transformed data shape            (1026, 85)
+3           Numeric features                    77
+4       Categorical features                     1
+5   Rows with missing values                 48.5%
+6                 Preprocess                  True
+7            Imputation type                simple
+8         Numeric imputation                  mean
+9     Categorical imputation                  mode
+10  Maximum one-hot encoding                    -1
+11           Encoding method                  None
+12                 Normalize                  True
+13          Normalize method                zscore
+14                  CPU Jobs                    -1
+15                   Use GPU                 False
+16            Log Experiment                 False
+17           Experiment Name  anomaly-default-name
+18                       USI                  0c02
+2023-05-24 22:03:00,398:INFO:setup() successfully completed in 0.41s...............
+2023-05-24 22:03:01,654:INFO:Initializing create_model()
+2023-05-24 22:03:01,654:INFO:create_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, estimator=iforest, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2023-05-24 22:03:01,654:INFO:Checking exceptions
+2023-05-24 22:03:01,743:INFO:Importing untrained model
+2023-05-24 22:03:01,756:INFO:Isolation Forest Imported successfully
+2023-05-24 22:03:01,773:INFO:Fitting Model
+2023-05-24 22:03:02,101:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2023-05-24 22:03:02,102:INFO:create_models() successfully completed......................................
+2023-05-24 22:03:02,107:INFO:Uploading results into container
+2023-05-24 22:03:02,107:INFO:Uploading model into container now
+2023-05-24 22:03:02,115:INFO:_master_model_container: 1
+2023-05-24 22:03:02,116:INFO:_display_container: 1
+2023-05-24 22:03:02,117:INFO:IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0)
+2023-05-24 22:03:02,117:INFO:create_model() successfully completed......................................
+2023-05-24 22:03:05,638:INFO:gpu_param set to False
+2023-05-24 22:03:06,989:INFO:Initializing assign_model()
+2023-05-24 22:03:06,991:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=False, score=True, verbose=True)
+2023-05-24 22:03:06,991:INFO:Checking exceptions
+2023-05-24 22:03:06,992:INFO:Determining Trained Model
+2023-05-24 22:03:06,992:INFO:Trained Model : Isolation Forest
+2023-05-24 22:03:06,993:INFO:Copying data
+2023-05-24 22:03:06,995:INFO:(1026, 80)
+2023-05-24 22:03:06,995:INFO:assign_model() successfully completed......................................
+2023-05-24 22:03:12,794:INFO:Initializing plot_model()
+2023-05-24 22:03:12,795:INFO:plot_model(plot=tsne, fold=None, use_train_data=False, verbose=True, display=None, display_format=None, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, system=True)
+2023-05-24 22:03:12,795:INFO:Checking exceptions
+2023-05-24 22:03:12,803:INFO:Preloading libraries
+2023-05-24 22:03:12,826:INFO:Copying training dataset
+2023-05-24 22:03:12,826:INFO:Plot type: tsne
+2023-05-24 22:03:12,826:INFO:SubProcess assign_model() called ==================================
+2023-05-24 22:03:12,827:INFO:Initializing assign_model()
+2023-05-24 22:03:12,827:INFO:assign_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), transformation=True, score=False, verbose=False)
+2023-05-24 22:03:12,827:INFO:Checking exceptions
+2023-05-24 22:03:12,827:INFO:Determining Trained Model
+2023-05-24 22:03:12,828:INFO:Trained Model : Isolation Forest
+2023-05-24 22:03:12,828:INFO:Copying data
+2023-05-24 22:03:12,863:INFO:Transformation parameter set to True. Assigned clusters are attached on transformed dataset.
+2023-05-24 22:03:12,864:INFO:(1026, 86)
+2023-05-24 22:03:12,864:INFO:assign_model() successfully completed......................................
+2023-05-24 22:03:12,864:INFO:SubProcess assign_model() end ==================================
+2023-05-24 22:03:12,866:INFO:Getting dummies to cast categorical variables
+2023-05-24 22:03:12,866:INFO:Fitting TSNE()
+2023-05-24 22:03:34,332:INFO:Rendering Visual
+2023-05-24 22:03:34,476:INFO:Visual Rendered Successfully
+2023-05-24 22:03:34,605:INFO:plot_model() successfully completed......................................
+2023-05-24 22:03:34,665:INFO:Initializing predict_model()
+2023-05-24 22:03:34,666:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 22:03:34,912:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:03:51,145:INFO:Initializing predict_model()
+2023-05-24 22:03:51,145:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, estimator=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), ml_usecase=None)
+2023-05-24 22:03:51,260:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:03:51,387:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:06:12,871:INFO:Initializing save_model()
+2023-05-24 22:06:12,871:INFO:save_model(model=IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0), model_name=iforest_first_date, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['class'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))]), verbose=True, use_case=MLUsecase.ANOMALY, kwargs={})
+2023-05-24 22:06:12,872:INFO:Adding model into prep_pipe
+2023-05-24 22:06:12,965:INFO:iforest_first_date.pkl saved in current working directory
+2023-05-24 22:06:12,978:INFO:Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0))])
+2023-05-24 22:06:12,978:INFO:save_model() successfully completed......................................
