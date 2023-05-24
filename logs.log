@@ -805,3 +805,36 @@ X has feature names, but IsolationForest was fitted without feature names
     max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
     random_state=123, verbose=0))])
 2023-05-24 22:06:12,978:INFO:save_model() successfully completed......................................
+2023-05-24 22:07:00,929:INFO:Initializing load_model()
+2023-05-24 22:07:00,930:INFO:load_model(model_name=iforest_first_date, platform=None, authentication=None, verbose=True)
+2023-05-24 22:07:01,047:INFO:Initializing predict_model()
+2023-05-24 22:07:01,048:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x000001921D9C62E0>, estimator=Pipeline(memory=FastMemory(location=C:\Users\admin\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['DYRK1A_N', 'ITSN1_N', 'BDNF_N',
+                                             'NR1_N', 'NR2A_N', 'pAKT_N',
+                                             'pBRAF_N', 'pCAMKII_N', 'pCREB_N',
+                                             'pELK_N', 'pERK_N', 'pJNK_N',
+                                             'PKCA_N', 'pMEK_N', 'pNR1_N',
+                                             'pNR2A_N', 'pNR2B_N', 'pPKCAB_N',
+                                             'pRSK_N', 'AKT_N', 'BRAF_N',
+                                             'CAMKII_N', 'CREB_...
+                 TransformerWrapper(include=['class'],
+                                    transformer=OneHotEncoder(cols=['class'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model',
+                 IForest(behaviour='new', bootstrap=False, contamination=0.05,
+    max_features=1.0, max_samples='auto', n_estimators=100, n_jobs=-1,
+    random_state=123, verbose=0))]), ml_usecase=None)
+2023-05-24 22:07:01,048:INFO:Set up data.
+2023-05-24 22:07:01,225:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
+2023-05-24 22:07:01,492:WARNING:c:\Users\admin\Desktop\Nutanxt\Learning\Fuard_Detection\env\lib\site-packages\sklearn\base.py:432: UserWarning:
+
+X has feature names, but IsolationForest was fitted without feature names
+
+
